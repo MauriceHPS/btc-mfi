@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" v="3.6" rws="_1490081824016191" Pws="_1490081824016191" cws="_1490081824016191" sm="false" xs="false" id="_14900818229791" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity xre="false" compositePrimaryKeyClass="CustomersRegistrationPK" abs="false" class="CustomersRegistration" v="true" m="false" rootElement="_14900818229791" id="_14900818229952">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="names" id="_149008182301126">
+                <jpa:bv/>
+                <jpa:column name="names" unique="false" nullable="false" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="regDate" id="_149008182301127">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="reg_date" unique="false" nullable="false" insertable="true" updatable="true" table="customers_registration"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="branchName" id="_149008182301128">
+                <jpa:bv/>
+                <jpa:column name="branch_name" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="location" id="_149008182301129">
+                <jpa:bv/>
+                <jpa:column name="location" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="contactPerson" id="_149008182301130">
+                <jpa:bv/>
+                <jpa:column name="contact_person" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="emailAddress" id="_149008182301131">
+                <jpa:bv/>
+                <jpa:column name="email_address" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="postalAddress" id="_149008182301132">
+                <jpa:bv/>
+                <jpa:column name="postal_address" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="contactPhoneNo" id="_149008182301133">
+                <jpa:bv/>
+                <jpa:column name="contact_phone_no" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="supervisorName" id="_149008182301134">
+                <jpa:bv/>
+                <jpa:column name="supervisor_name" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="attendantName" id="_149008182301135">
+                <jpa:bv/>
+                <jpa:column name="attendant_name" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="branchPhoneno" id="_149008182301136">
+                <jpa:bv/>
+                <jpa:column name="branch_phoneno" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="managerPhoneno" id="_149008182301137">
+                <jpa:bv/>
+                <jpa:column name="manager_phoneno" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="pinNo" id="_149008182301138">
+                <jpa:bv/>
+                <jpa:column name="pin_no" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="vatNo" id="_149008182301139">
+                <jpa:bv/>
+                <jpa:column name="vat_no" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="customerCategory" id="_149008182301140">
+                <jpa:bv/>
+                <jpa:column name="customer_category" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="supervisorPhoneno" id="_149008182301141">
+                <jpa:bv/>
+                <jpa:column name="supervisor_phoneno" unique="false" nullable="true" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:id attribute-type="String" v="true" name="customerId" id="_149008182301125">
+                <jpa:bv/>
+                <jpa:column name="customer_id" unique="false" nullable="false" insertable="true" updatable="true" table="customers_registration" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="customers_registration"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="HousingPK" abs="false" class="Housing" v="true" m="false" rootElement="_14900818229791" id="_14900818229953">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="name" id="_149008182301143">
+                <jpa:bv/>
+                <jpa:column name="name" unique="false" nullable="true" insertable="true" updatable="true" table="housing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="description" id="_149008182301144">
+                <jpa:bv/>
+                <jpa:column name="description" unique="false" nullable="true" insertable="true" updatable="true" table="housing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" name="capacity" id="_149008182301145">
+                <jpa:bv/>
+                <jpa:column name="capacity" unique="false" nullable="true" insertable="true" updatable="true" table="housing"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="location" id="_149008182301146">
+                <jpa:bv/>
+                <jpa:column name="location" unique="false" nullable="true" insertable="true" updatable="true" table="housing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_14900818229956" connected-attribute-id="_149008182301169" v="true" name="receivingChicksCollection" id="_149008182301147">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299513" connected-attribute-id="_1490081823011114" v="true" name="birdsAllocationCollection" id="_149008182301148">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299518" connected-attribute-id="_1490081823011153" v="true" name="collectionsCollection" id="_149008182301149">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299520" connected-attribute-id="_1490081823011170" v="true" name="mortalityCollection" id="_149008182301150">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="houseNo" id="_149008182301142">
+                <jpa:bv/>
+                <jpa:column name="house_no" unique="false" nullable="false" insertable="true" updatable="true" table="housing" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="housing"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="AccessControlPK" abs="false" class="AccessControl" v="true" m="false" rootElement="_14900818229791" id="_14900818229954">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="pwdExpiryDate" id="_149008182301152">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="pwd_expiry_date" unique="false" nullable="false" insertable="true" updatable="true" table="access_control"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" name="loginCount" id="_149008182301153">
+                <jpa:bv/>
+                <jpa:column name="login_count" unique="false" nullable="false" insertable="true" updatable="true" table="access_control"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="password" id="_149008182301154">
+                <jpa:bv/>
+                <jpa:column name="password" unique="false" nullable="false" insertable="true" updatable="true" table="access_control" length="2147483647"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149008182299510" connected-attribute-id="_149008182301194" v="true" name="staffId" id="_149008182301155">
+                <jpa:bv/>
+                <jpa:join-column name="STAFF_ID" rc="STAFF_ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_14900818229956" connected-attribute-id="_149008182301168" v="true" name="receivingChicksCollection" id="_149008182301156">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299513" connected-attribute-id="_1490081823011113" v="true" name="birdsAllocationCollection" id="_149008182301157">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299517" connected-attribute-id="_1490081823011144" v="true" name="storesSetupCollection" id="_149008182301158">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299518" connected-attribute-id="_1490081823011152" v="true" name="collectionsCollection" id="_149008182301159">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299520" connected-attribute-id="_1490081823011169" v="true" name="mortalityCollection" id="_149008182301160">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="username" id="_149008182301151">
+                <jpa:bv/>
+                <jpa:column name="username" unique="false" nullable="false" insertable="true" updatable="true" table="access_control" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="access_control"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="ApprovalLevelsPK" abs="false" class="ApprovalLevels" v="true" m="false" rootElement="_14900818229791" id="_14900818229955">
+        <jpa:attributes>
+            <jpa:id attribute-type="String" v="true" name="level" id="_149008182301161">
+                <jpa:bv/>
+                <jpa:column name="level" unique="false" nullable="false" insertable="true" updatable="true" table="approval_levels" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="approval_levels"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="ReceivingChicksPK" abs="false" class="ReceivingChicks" v="true" m="false" rootElement="_14900818229791" id="_14900818229956">
+        <jpa:ts e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="int" v="true" name="quantityPerBatch" id="_149008182301163">
+                <jpa:bv/>
+                <jpa:column name="quantity_per_batch" unique="false" nullable="false" insertable="true" updatable="true" table="receiving_chicks"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.math.BigInteger" v="true" name="pricePerBatch" id="_149008182301164">
+                <jpa:bv/>
+                <jpa:column name="price_per_batch" unique="false" nullable="false" insertable="true" updatable="true" table="receiving_chicks"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="modeOfPayment" id="_149008182301165">
+                <jpa:bv/>
+                <jpa:column name="mode_of_payment" unique="false" nullable="false" insertable="true" updatable="true" table="receiving_chicks" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="date" id="_149008182301166">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="date" unique="false" nullable="false" insertable="true" updatable="true" table="receiving_chicks"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" name="noOfBatches" id="_149008182301167">
+                <jpa:bv/>
+                <jpa:column name="no_of_batches" unique="false" nullable="false" insertable="true" updatable="true" table="receiving_chicks"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229954" connected-attribute-id="_149008182301156" v="true" name="username" id="_149008182301168">
+                <jpa:bv/>
+                <jpa:join-column name="USERNAME" rc="USERNAME" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229953" connected-attribute-id="_149008182301147" v="true" name="housingUnit" id="_149008182301169">
+                <jpa:bv/>
+                <jpa:join-column name="HOUSING_UNIT" rc="HOUSE_NO" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="receivingId" id="_149008182301162">
+                <jpa:bv/>
+                <jpa:column name="receiving_id" unique="false" nullable="false" insertable="true" updatable="true" table="receiving_chicks" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:el/>
+        <jpa:table name="receiving_chicks"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="DiseasesPK" abs="false" class="Diseases" v="true" m="false" rootElement="_14900818229791" id="_14900818229957">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="diseaseName" id="_149008182301171">
+                <jpa:bv/>
+                <jpa:column name="disease_name" unique="false" nullable="false" insertable="true" updatable="true" table="diseases" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="registrationDate" id="_149008182301172">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="registration_date" unique="false" nullable="false" insertable="true" updatable="true" table="diseases"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="description" id="_149008182301173">
+                <jpa:bv/>
+                <jpa:column name="description" unique="false" nullable="true" insertable="true" updatable="true" table="diseases" length="2147483647"/>
+            </jpa:basic>
+            <jpa:id attribute-type="String" v="true" name="diseasesId" id="_149008182301170">
+                <jpa:bv/>
+                <jpa:column name="diseases_id" unique="false" nullable="false" insertable="true" updatable="true" table="diseases" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="diseases"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PackagingPK" abs="false" class="Packaging" v="true" m="false" rootElement="_14900818229791" id="_14900818229958">
+        <jpa:attributes>
+            <jpa:id attribute-type="String" v="true" name="variations" id="_149008182301174">
+                <jpa:bv/>
+                <jpa:column name="variations" unique="false" nullable="false" insertable="true" updatable="true" table="packaging" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="packaging"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="SaleableItemsPK" abs="false" class="SaleableItems" v="true" m="false" rootElement="_14900818229791" id="_14900818229959">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="itemName" id="_149008182301176">
+                <jpa:bv/>
+                <jpa:column name="item_name" unique="false" nullable="false" insertable="true" updatable="true" table="saleable_items" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.math.BigDecimal" v="true" name="sellingPrice" id="_149008182301177">
+                <jpa:bv/>
+                <jpa:column name="selling_price" unique="false" nullable="false" insertable="true" updatable="true" table="saleable_items" precision="10" scale="2"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" name="quantity" id="_149008182301178">
+                <jpa:bv/>
+                <jpa:column name="quantity" unique="false" nullable="false" insertable="true" updatable="true" table="saleable_items"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.math.BigDecimal" v="true" name="buyingPrice" id="_149008182301179">
+                <jpa:bv/>
+                <jpa:column name="buying_price" unique="false" nullable="false" insertable="true" updatable="true" table="saleable_items" precision="10" scale="2"/>
+            </jpa:basic>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299518" connected-attribute-id="_1490081823011154" v="true" name="collectionsCollection" id="_149008182301180">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="itemNo" id="_149008182301175">
+                <jpa:bv/>
+                <jpa:column name="item_no" unique="false" nullable="false" insertable="true" updatable="true" table="saleable_items" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="saleable_items"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="StaffRegistrationPK" abs="false" class="StaffRegistration" v="true" m="false" rootElement="_14900818229791" id="_149008182299510">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="names" id="_149008182301182">
+                <jpa:bv/>
+                <jpa:column name="names" unique="false" nullable="false" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="registrationDate" id="_149008182301183">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="registration_date" unique="false" nullable="false" insertable="true" updatable="true" table="staff_registration"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="gender" id="_149008182301184">
+                <jpa:bv/>
+                <jpa:column name="gender" unique="false" nullable="false" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="idNo" id="_149008182301185">
+                <jpa:bv/>
+                <jpa:column name="id_no" unique="false" nullable="false" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="boolean" v="true" name="active" id="_149008182301186">
+                <jpa:bv/>
+                <jpa:column name="active" unique="false" nullable="false" insertable="true" updatable="true" table="staff_registration"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="designation" id="_149008182301187">
+                <jpa:bv/>
+                <jpa:column name="designation" unique="false" nullable="false" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="residence" id="_149008182301188">
+                <jpa:bv/>
+                <jpa:column name="residence" unique="false" nullable="true" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="nextOfKinNames" id="_149008182301189">
+                <jpa:bv/>
+                <jpa:column name="next_of_kin_names" unique="false" nullable="true" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="nextOfKinPhoneno" id="_149008182301190">
+                <jpa:bv/>
+                <jpa:column name="next_of_kin_phoneno" unique="false" nullable="true" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="relationship" id="_149008182301191">
+                <jpa:bv/>
+                <jpa:column name="relationship" unique="false" nullable="true" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="nextOfKinResidence" id="_149008182301192">
+                <jpa:bv/>
+                <jpa:column name="next_of_kin_residence" unique="false" nullable="true" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="telNo" id="_149008182301193">
+                <jpa:bv/>
+                <jpa:column name="tel_no" unique="false" nullable="true" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_14900818229954" connected-attribute-id="_149008182301155" v="true" name="accessControlCollection" id="_149008182301194">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="staffId" id="_149008182301181">
+                <jpa:bv/>
+                <jpa:column name="staff_id" unique="false" nullable="false" insertable="true" updatable="true" table="staff_registration" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="staff_registration"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="CoaSpecificsPK" abs="false" class="CoaSpecifics" v="true" m="false" rootElement="_14900818229791" id="_149008182299511">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="name" id="_149008182301196">
+                <jpa:bv/>
+                <jpa:column name="name" unique="false" nullable="false" insertable="true" updatable="true" table="coa_specifics" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="side" id="_149008182301197">
+                <jpa:bv/>
+                <jpa:column name="side" unique="false" nullable="true" insertable="true" updatable="true" table="coa_specifics" length="2147483647"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149008182299522" connected-attribute-id="_1490081823011187" v="true" name="masterCode" id="_149008182301198">
+                <jpa:bv/>
+                <jpa:join-column name="MASTER_CODE" rc="ACCOUNTING_CODE" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299519" connected-attribute-id="_1490081823011163" v="true" name="assetsRegistrationCollection" id="_149008182301199">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="subCode" id="_149008182301195">
+                <jpa:bv/>
+                <jpa:column name="sub_code" unique="false" nullable="false" insertable="true" updatable="true" table="coa_specifics" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="coa_specifics"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="StockItemsPK" abs="false" class="StockItems" v="true" m="false" rootElement="_14900818229791" id="_149008182299512">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="itemName" id="_1490081823011101">
+                <jpa:bv/>
+                <jpa:column name="item_name" unique="false" nullable="false" insertable="true" updatable="true" table="stock_items" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" name="quantity" id="_1490081823011102">
+                <jpa:bv/>
+                <jpa:column name="quantity" unique="false" nullable="true" insertable="true" updatable="true" table="stock_items"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.math.BigDecimal" v="true" name="buyingPrice" id="_1490081823011103">
+                <jpa:bv/>
+                <jpa:column name="buying_price" unique="false" nullable="false" insertable="true" updatable="true" table="stock_items" precision="10" scale="2"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="category" id="_1490081823011104">
+                <jpa:bv/>
+                <jpa:column name="category" unique="false" nullable="false" insertable="true" updatable="true" table="stock_items" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="dateRegistered" id="_1490081823011105">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="date_registered" unique="false" nullable="false" insertable="true" updatable="true" table="stock_items"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" name="minStockCount" id="_1490081823011106">
+                <jpa:bv/>
+                <jpa:column name="min_stock_count" unique="false" nullable="false" insertable="true" updatable="true" table="stock_items"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="reusable" id="_1490081823011107">
+                <jpa:bv/>
+                <jpa:column name="reusable" unique="false" nullable="true" insertable="true" updatable="true" table="stock_items" length="2147483647"/>
+            </jpa:basic>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_149008182299516" connected-attribute-id="_1490081823011139" v="true" name="supplierId" id="_1490081823011108">
+                <jpa:bv/>
+                <jpa:join-column name="SUPPLIER_ID" rc="SUPPLIER_ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299521" connected-attribute-id="_1490081823011183" v="true" name="stReceivingIssuingCollection" id="_1490081823011109">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="itemCode" id="_1490081823011100">
+                <jpa:bv/>
+                <jpa:column name="item_code" unique="false" nullable="false" insertable="true" updatable="true" table="stock_items" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="stock_items"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="BirdsAllocationPK" abs="false" class="BirdsAllocation" v="true" m="false" rootElement="_14900818229791" id="_149008182299513">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="int" v="true" name="noOfBirds" id="_1490081823011111">
+                <jpa:bv/>
+                <jpa:column name="no_of_birds" unique="false" nullable="false" insertable="true" updatable="true" table="birds_allocation"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="date" id="_1490081823011112">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="date" unique="false" nullable="false" insertable="true" updatable="true" table="birds_allocation"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229954" connected-attribute-id="_149008182301157" v="true" name="username" id="_1490081823011113">
+                <jpa:bv/>
+                <jpa:join-column name="USERNAME" rc="USERNAME" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229953" connected-attribute-id="_149008182301148" v="true" name="houseNo" id="_1490081823011114">
+                <jpa:bv/>
+                <jpa:join-column name="HOUSE_NO" rc="HOUSE_NO" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="allocationNo" id="_1490081823011110">
+                <jpa:bv/>
+                <jpa:column name="allocation_no" unique="false" nullable="false" insertable="true" updatable="true" table="birds_allocation" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="birds_allocation"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="MealCategoriesPK" abs="false" class="MealCategories" v="true" m="false" rootElement="_14900818229791" id="_149008182299514">
+        <jpa:attributes>
+            <jpa:id attribute-type="String" v="true" name="mealName" id="_1490081823011115">
+                <jpa:bv/>
+                <jpa:column name="meal_name" unique="false" nullable="false" insertable="true" updatable="true" table="meal_categories" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="meal_categories"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PaymentModesPK" abs="false" class="PaymentModes" v="true" m="false" rootElement="_14900818229791" id="_149008182299515">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="status" id="_1490081823011117">
+                <jpa:bv/>
+                <jpa:column name="status" unique="false" nullable="false" insertable="true" updatable="true" table="payment_modes" length="2147483647"/>
+            </jpa:basic>
+            <jpa:id attribute-type="String" v="true" name="mode" id="_1490081823011116">
+                <jpa:bv/>
+                <jpa:column name="mode" unique="false" nullable="false" insertable="true" updatable="true" table="payment_modes" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="payment_modes"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="StockSuppliersPK" abs="false" class="StockSuppliers" v="true" m="false" rootElement="_14900818229791" id="_149008182299516">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="supplierNames" id="_1490081823011119">
+                <jpa:bv/>
+                <jpa:column name="supplier_names" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="address" id="_1490081823011120">
+                <jpa:bv/>
+                <jpa:column name="address" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="phoneNo" id="_1490081823011121">
+                <jpa:bv/>
+                <jpa:column name="phone_no" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="emailAddress" id="_1490081823011122">
+                <jpa:bv/>
+                <jpa:column name="email_address" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="accountNo" id="_1490081823011123">
+                <jpa:bv/>
+                <jpa:column name="account_no" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="accountNames" id="_1490081823011124">
+                <jpa:bv/>
+                <jpa:column name="account_names" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="dateRegistered" id="_1490081823011125">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="date_registered" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="branchName" id="_1490081823011126">
+                <jpa:bv/>
+                <jpa:column name="branch_name" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="branchCode" id="_1490081823011127">
+                <jpa:bv/>
+                <jpa:column name="branch_code" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.math.BigDecimal" v="true" name="creditLimit" id="_1490081823011128">
+                <jpa:bv/>
+                <jpa:column name="credit_limit" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" precision="10" scale="2"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="bankName" id="_1490081823011129">
+                <jpa:bv/>
+                <jpa:column name="bank_name" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="boolean" v="true" name="active" id="_1490081823011130">
+                <jpa:bv/>
+                <jpa:column name="active" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="street" id="_1490081823011131">
+                <jpa:bv/>
+                <jpa:column name="street" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="location" id="_1490081823011132">
+                <jpa:bv/>
+                <jpa:column name="location" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="contactPersonPhoneno" id="_1490081823011133">
+                <jpa:bv/>
+                <jpa:column name="contact_person_phoneno" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="vatRegno" id="_1490081823011134">
+                <jpa:bv/>
+                <jpa:column name="vat_regno" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="pinNo" id="_1490081823011135">
+                <jpa:bv/>
+                <jpa:column name="pin_no" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="contactPerson" id="_1490081823011136">
+                <jpa:bv/>
+                <jpa:column name="contact_person" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="paymentMode" id="_1490081823011137">
+                <jpa:bv/>
+                <jpa:column name="payment_mode" unique="false" nullable="true" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="mpesaNo" id="_1490081823011138">
+                <jpa:bv/>
+                <jpa:column name="mpesa_no" unique="false" nullable="true" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:basic>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299512" connected-attribute-id="_1490081823011108" v="true" name="stockItemsCollection" id="_1490081823011139">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299519" connected-attribute-id="_1490081823011164" v="true" name="assetsRegistrationCollection" id="_1490081823011140">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299521" connected-attribute-id="_1490081823011184" v="true" name="stReceivingIssuingCollection" id="_1490081823011141">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="supplierId" id="_1490081823011118">
+                <jpa:bv/>
+                <jpa:column name="supplier_id" unique="false" nullable="false" insertable="true" updatable="true" table="stock_suppliers" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="stock_suppliers"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="StoresSetupPK" abs="false" class="StoresSetup" v="true" m="false" rootElement="_14900818229791" id="_149008182299517">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="storeName" id="_1490081823011143">
+                <jpa:bv/>
+                <jpa:column name="store_name" unique="false" nullable="false" insertable="true" updatable="true" table="stores_setup" length="2147483647"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229954" connected-attribute-id="_149008182301158" v="true" name="username" id="_1490081823011144">
+                <jpa:bv/>
+                <jpa:join-column name="USERNAME" rc="USERNAME" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="storeId" id="_1490081823011142">
+                <jpa:bv/>
+                <jpa:column name="store_id" unique="false" nullable="false" insertable="true" updatable="true" table="stores_setup" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="stores_setup"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="CollectionsPK" abs="false" class="Collections" v="true" m="false" rootElement="_14900818229791" id="_149008182299518">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="int" v="true" name="quantityCollected" id="_1490081823011146">
+                <jpa:bv/>
+                <jpa:column name="quantity_collected" unique="false" nullable="false" insertable="true" updatable="true" table="collections"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="collectionDate" id="_1490081823011147">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="collection_date" unique="false" nullable="false" insertable="true" updatable="true" table="collections"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="boolean" v="true" name="sorted" id="_1490081823011148">
+                <jpa:bv/>
+                <jpa:column name="sorted" unique="false" nullable="false" insertable="true" updatable="true" table="collections"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" name="remainder" id="_1490081823011149">
+                <jpa:bv/>
+                <jpa:column name="remainder" unique="false" nullable="false" insertable="true" updatable="true" table="collections"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="sortingId" id="_1490081823011150">
+                <jpa:bv/>
+                <jpa:column name="sorting_id" unique="false" nullable="true" insertable="true" updatable="true" table="collections" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="farmCollector" id="_1490081823011151">
+                <jpa:bv/>
+                <jpa:column name="farm_collector" unique="false" nullable="false" insertable="true" updatable="true" table="collections" length="2147483647"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229954" connected-attribute-id="_149008182301159" v="true" name="collector" id="_1490081823011152">
+                <jpa:bv/>
+                <jpa:join-column name="COLLECTOR" rc="USERNAME" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229953" connected-attribute-id="_149008182301149" v="true" name="houseNo" id="_1490081823011153">
+                <jpa:bv/>
+                <jpa:join-column name="HOUSE_NO" rc="HOUSE_NO" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229959" connected-attribute-id="_149008182301180" v="true" name="itemNo" id="_1490081823011154">
+                <jpa:bv/>
+                <jpa:join-column name="ITEM_NO" rc="ITEM_NO" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="id" id="_1490081823011145">
+                <jpa:bv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="collections" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="collections"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="AssetsRegistrationPK" abs="false" class="AssetsRegistration" v="true" m="false" rootElement="_14900818229791" id="_149008182299519">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="assetName" id="_1490081823011156">
+                <jpa:bv/>
+                <jpa:column name="asset_name" unique="false" nullable="false" insertable="true" updatable="true" table="assets_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.math.BigDecimal" v="true" name="value" id="_1490081823011157">
+                <jpa:bv/>
+                <jpa:column name="value" unique="false" nullable="false" insertable="true" updatable="true" table="assets_registration" precision="20" scale="2"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="registrationDate" id="_1490081823011158">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="registration_date" unique="false" nullable="false" insertable="true" updatable="true" table="assets_registration"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="assetLocation" id="_1490081823011159">
+                <jpa:bv/>
+                <jpa:column name="asset_location" unique="false" nullable="false" insertable="true" updatable="true" table="assets_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="modeOfPayment" id="_1490081823011160">
+                <jpa:bv/>
+                <jpa:column name="mode_of_payment" unique="false" nullable="false" insertable="true" updatable="true" table="assets_registration" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" name="purchaseDate" id="_1490081823011161">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="purchase_date" unique="false" nullable="true" insertable="true" updatable="true" table="assets_registration"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149008182299522" connected-attribute-id="_1490081823011188" v="true" name="coaCode" id="_1490081823011162">
+                <jpa:bv/>
+                <jpa:join-column name="COA_CODE" rc="ACCOUNTING_CODE" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149008182299511" connected-attribute-id="_149008182301199" v="true" name="coaSubCode" id="_1490081823011163">
+                <jpa:bv/>
+                <jpa:join-column name="COA_SUB_CODE" rc="SUB_CODE" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_149008182299516" connected-attribute-id="_1490081823011140" v="true" name="supplierId" id="_1490081823011164">
+                <jpa:bv/>
+                <jpa:join-column name="SUPPLIER_ID" rc="SUPPLIER_ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="assetNo" id="_1490081823011155">
+                <jpa:bv/>
+                <jpa:column name="asset_no" unique="false" nullable="false" insertable="true" updatable="true" table="assets_registration" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="assets_registration"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="MortalityPK" abs="false" class="Mortality" v="true" m="false" rootElement="_14900818229791" id="_149008182299520">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="java.util.Date" v="true" name="time" id="_1490081823011166">
+                <jpa:bv/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="time" unique="false" nullable="false" insertable="true" updatable="true" table="mortality"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="int" v="true" name="casualties" id="_1490081823011167">
+                <jpa:bv/>
+                <jpa:column name="casualties" unique="false" nullable="false" insertable="true" updatable="true" table="mortality"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.math.BigInteger" v="true" name="estimatedLossValue" id="_1490081823011168">
+                <jpa:bv/>
+                <jpa:column name="estimated_loss_value" unique="false" nullable="true" insertable="true" updatable="true" table="mortality"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229954" connected-attribute-id="_149008182301160" v="true" name="username" id="_1490081823011169">
+                <jpa:bv/>
+                <jpa:join-column name="USERNAME" rc="USERNAME" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_14900818229953" connected-attribute-id="_149008182301150" v="true" name="houseNo" id="_1490081823011170">
+                <jpa:bv/>
+                <jpa:join-column name="HOUSE_NO" rc="HOUSE_NO" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="mortalityId" id="_1490081823011165">
+                <jpa:bv/>
+                <jpa:column name="mortality_id" unique="false" nullable="false" insertable="true" updatable="true" table="mortality" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="mortality"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="StReceivingIssuingPK" abs="false" class="StReceivingIssuing" v="true" m="false" rootElement="_14900818229791" id="_149008182299521">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" name="quantityReceived" id="_1490081823011172">
+                <jpa:bv/>
+                <jpa:column name="quantity_received" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="receivingNo" id="_1490081823011173">
+                <jpa:bv/>
+                <jpa:column name="receiving_no" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" name="receivingDate" id="_1490081823011174">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="receiving_date" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="orderId" id="_1490081823011175">
+                <jpa:bv/>
+                <jpa:column name="order_id" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="issueNo" id="_1490081823011176">
+                <jpa:bv/>
+                <jpa:column name="issue_no" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="quantityIssued" id="_1490081823011177">
+                <jpa:bv/>
+                <jpa:column name="quantity_issued" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="receivingDept" id="_1490081823011178">
+                <jpa:bv/>
+                <jpa:column name="receiving_dept" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="receiver" id="_1490081823011179">
+                <jpa:bv/>
+                <jpa:column name="receiver" unique="false" nullable="false" insertable="true" updatable="true" table="st_receiving_issuing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="issuer" id="_1490081823011180">
+                <jpa:bv/>
+                <jpa:column name="issuer" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing" length="2147483647"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" name="issuingDate" id="_1490081823011181">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+                <jpa:column name="issuing_date" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" name="price" id="_1490081823011182">
+                <jpa:bv/>
+                <jpa:column name="price" unique="false" nullable="true" insertable="true" updatable="true" table="st_receiving_issuing"/>
+            </jpa:basic>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_149008182299512" connected-attribute-id="_1490081823011109" v="true" name="itemCode" id="_1490081823011183">
+                <jpa:bv/>
+                <jpa:join-column name="ITEM_CODE" rc="ITEM_CODE" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_149008182299516" connected-attribute-id="_1490081823011141" v="true" name="supplierId" id="_1490081823011184">
+                <jpa:bv/>
+                <jpa:join-column name="SUPPLIER_ID" rc="SUPPLIER_ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="id" id="_1490081823011171">
+                <jpa:bv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="st_receiving_issuing" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="st_receiving_issuing"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="ChartOfAccountsPK" abs="false" class="ChartOfAccounts" v="true" m="false" rootElement="_14900818229791" id="_149008182299522">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="category" id="_1490081823011186">
+                <jpa:bv/>
+                <jpa:column name="category" unique="false" nullable="false" insertable="true" updatable="true" table="chart_of_accounts" length="2147483647"/>
+            </jpa:basic>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299511" connected-attribute-id="_149008182301198" v="true" name="coaSpecificsCollection" id="_1490081823011187">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149008182299519" connected-attribute-id="_1490081823011162" v="true" name="assetsRegistrationCollection" id="_1490081823011188">
+                <jpa:bv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="accountingCode" id="_1490081823011185">
+                <jpa:bv/>
+                <jpa:column name="accounting_code" unique="false" nullable="false" insertable="true" updatable="true" table="chart_of_accounts" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="chart_of_accounts"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="ApprovalCategoriesPK" abs="false" class="ApprovalCategories" v="true" m="false" rootElement="_14900818229791" id="_149008182299523">
+        <jpa:attributes>
+            <jpa:id attribute-type="String" v="true" name="category" id="_1490081823011189">
+                <jpa:bv/>
+                <jpa:column name="category" unique="false" nullable="false" insertable="true" updatable="true" table="approval_categories" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="approval_categories"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="LabellingPK" abs="false" class="Labelling" v="true" m="false" rootElement="_14900818229791" id="_149008182299524">
+        <jpa:attributes>
+            <jpa:id attribute-type="String" v="true" name="variations" id="_1490081823011190">
+                <jpa:bv/>
+                <jpa:column name="variations" unique="false" nullable="false" insertable="true" updatable="true" table="labelling" length="2147483647"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="labelling"/>
+    </jpa:entity>
+    <jpa:snp loc="BEFORE_PACKAGE" e="true">/**
+ * This file was generated by the JPA Modeler
+ */</jpa:snp>
+    <jpa:c/>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_1490081824016191">
+            <i ref="_14900818229958" x="2482" y="601"/>
+            <i ref="_14900818229959" x="1341" y="1990"/>
+            <i ref="_14900818229956" x="83" y="69"/>
+            <i ref="_14900818229957" x="4358" y="601"/>
+            <i ref="_14900818229954" x="551" y="601"/>
+            <i ref="_14900818229955" x="2171" y="601"/>
+            <i ref="_14900818229952" x="4002" y="601"/>
+            <i ref="_149008182299519" x="1341" y="264"/>
+            <i ref="_14900818229953" x="32" y="601"/>
+            <i ref="_149008182299517" x="814" y="1232"/>
+            <i ref="_149008182299518" x="1060" y="1653"/>
+            <i ref="_149008182299515" x="2766" y="601"/>
+            <i ref="_149008182299516" x="1622" y="601"/>
+            <i ref="_149008182299513" x="814" y="264"/>
+            <i ref="_149008182299524" x="3078" y="601"/>
+            <i ref="_149008182299514" x="3353" y="601"/>
+            <i ref="_149008182299511" x="1060" y="32"/>
+            <i ref="_149008182299522" x="1622" y="32"/>
+            <i ref="_149008182299512" x="1341" y="1232"/>
+            <i ref="_149008182299523" x="3666" y="601"/>
+            <i ref="_149008182299520" x="1060" y="601"/>
+            <i ref="_149008182299510" x="295" y="1232"/>
+            <i ref="_149008182299521" x="1903" y="1232"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>

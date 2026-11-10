@@ -118,15 +118,6 @@ public class WatchListSummaryPdf implements java.lang.Runnable{
             System.out.println("We shall be lucky to get back to start in one piece");
             
         }
-        
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
-        
     }
     
     public void generatePdf() {

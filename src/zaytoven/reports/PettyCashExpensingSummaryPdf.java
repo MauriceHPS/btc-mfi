@@ -123,13 +123,7 @@ public class PettyCashExpensingSummaryPdf implements java.lang.Runnable{
             
         }
         
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
+              
         
     }
     

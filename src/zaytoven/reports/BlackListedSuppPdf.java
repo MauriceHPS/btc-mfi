@@ -106,13 +106,7 @@ public class BlackListedSuppPdf implements java.lang.Runnable{
             
         }
         
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
+              
         
     }
     

@@ -119,13 +119,7 @@ public class LoanStatementBreakdownPdf implements java.lang.Runnable{
             
         }
         
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
+              
         
     }
     

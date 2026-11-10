@@ -115,14 +115,6 @@ public class ReturnedItemsPdf implements java.lang.Runnable{
             
         }
         
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
-        
     }
     
     public void generatePdf() {

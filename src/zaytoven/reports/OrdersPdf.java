@@ -108,13 +108,7 @@ public class OrdersPdf implements java.lang.Runnable{
             
         }
         
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
+              
         
     }
     

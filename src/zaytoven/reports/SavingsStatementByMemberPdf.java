@@ -124,14 +124,6 @@ public class SavingsStatementByMemberPdf implements java.lang.Runnable{
             
         }
         
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
-        
     }
     
     public void generatePdf() {

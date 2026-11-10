@@ -103,13 +103,7 @@ public class AssetRegisterPdf implements java.lang.Runnable{
             
         }
         
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
+              
         
     }
     

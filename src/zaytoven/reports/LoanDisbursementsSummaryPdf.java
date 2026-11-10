@@ -14,7 +14,6 @@ import com.lowagie.text.Phrase;
 import com.lowagie.text.Rectangle;
 import com.lowagie.text.pdf.PdfCell;
 import java.awt.Desktop;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.logging.Level;
@@ -121,15 +120,6 @@ public class LoanDisbursementsSummaryPdf implements java.lang.Runnable{
             System.out.println("We shall be lucky to get back to start in one piece");
             
         }
-        
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
-        
     }
     
     public void generatePdf() {

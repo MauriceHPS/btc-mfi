@@ -119,13 +119,6 @@ public class StocksReceivingPdf implements java.lang.Runnable{
             
         }
         
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
         
     }
     

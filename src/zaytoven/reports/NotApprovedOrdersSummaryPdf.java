@@ -112,13 +112,7 @@ public class NotApprovedOrdersSummaryPdf implements java.lang.Runnable{
             
         }
         
-        if (!threadCheck) {
-            
-            
-            
-            Thread.currentThread().stop();
-            
-        }
+              
         
     }
     
